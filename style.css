@@ -7,31 +7,43 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 body {
     background-color: #3650a1;
     
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat (12, 1fr);
+    grid-template-areas: auto;
 }
 
 .header-logo {
-    justify-content: center;
-    
+    grid-column: 1/span 13;
+    max-width: 100%;
+    height: auto;
 }
-/* Extra small devices (devices with a max width of 576px)*/
-@media only screen and (max-width: 576px){
-    body {
-        background-color: black;
-    }
-    
+
+.align-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.home, .films, .programma, .verwacht {
+    display: flex;
+    justify-content: center;
 }
 
 /* Small devices (devices with a max width of 768px)*/
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 576px) and (max-width: 768px) {
     body {
         background-color: red;
     }
@@ -39,14 +51,14 @@ body {
 }
 
 /* Medium devices (devices with a max width of 992px)*/
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-color: green;
     }
 }
 
 /* Large devices (devices with a max width of 1200px)*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     body {
         background-color: yellow;
     }
@@ -55,5 +67,8 @@ body {
 
 /* Extra large devices (devices with a min width of 1200px)*/
 @media only screen and (min-width: 1200px) {
+    body {
+        background-color: purple;
+    }
     
 }
