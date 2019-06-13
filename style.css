@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap');
+
 * {
     box-sizing: border-box;
     
@@ -23,11 +25,13 @@ body {
 
 .navigation {
     min-width: 320px;
+    max-width: 100%;
     font-size: 28px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    
 }
 
 .container {
@@ -39,12 +43,14 @@ body {
 
 #featured-film {
     grid-area: mainContent;
+    margin-left: 25px;
 
 }
 
 #featured-film img {
     width: 200px;
-    height: 70%;
+    height: 300px;
+    padding: 20px;
 }
 
 body {
@@ -58,24 +64,41 @@ a {
 
 li {
     list-style: none;
+    padding-right: 30px;
+    font-family: 'Old Standard TT', serif;
 }
 
 #verwacht {
     grid-area: subContent;
+    max-width: 500px;
     background-color: #0f152a;
+    display:flex;
+    flex-direction: column;
 }
 
 #verwacht h4{
     color: #3e6c8a;
+    margin-left: 20px;
+    margin-bottom: -2px;
+    font-size: 20px;
+    
 }
 
 #verwacht h3, #verwacht span {
     color: #ab9142;
+    font-family: 'Slabo 27px', serif;
+    margin-left: 20px;
 }
 
 #verwacht h3 {
-    font-size: 26px;
+    font-size: 28px;
 }
+
+#verwacht span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /* EXTRA SMALL SCREENS */
 @media screen and (max-width:576px){
     body {
@@ -123,18 +146,56 @@ li {
     .navigation {
         grid-area: navigation;
     }
+    
 }
+
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 769px) and (max-width: 992px){
     body {
         background-color: green;
     }
+    
+    
 }
+
 
 /* LARGE SCREENS */
 @media screen and (min-width: 993px) and (max-width: 1200px){
     body {
         background-color: yellow;
     }
+    
 }
+
+/*.aladdin {
+    grid-area: aladdin;
+}
+
+.avengers {
+    grid-area: avengers;
+}
+
+.phoenix {
+    grid-area: dark-phoenix;
+}
+
+.dumbo {
+    grid-area: dumbo;
+}
+
+.john-wick {
+    grid-area: john-wick;
+}
+
+.pikachu {
+    grid-area: pikachu;
+}
+
+.rocketman {
+    grid-area: rocketman;
+}
+
+.wonder-park {
+    grid-area: wonder-park;
+}*/
