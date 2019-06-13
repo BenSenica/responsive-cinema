@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
 * {
     box-sizing: border-box;
     
@@ -35,18 +37,14 @@ body {
         "mainContent subContent"
 }
 
-.featured-film {
+#featured-film {
     grid-area: mainContent;
-    display:flex;
-    justify-content: space-around;
-}
-.verwacht {
-    grid-area: subContent;
+
 }
 
 #featured-film img {
     width: 200px;
-    height: auto;
+    height: 70%;
 }
 
 body {
@@ -63,6 +61,7 @@ li {
 }
 
 #verwacht {
+    grid-area: subContent;
     background-color: #0f152a;
 }
 
