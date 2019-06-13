@@ -4,21 +4,57 @@
     
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Responsive Cinema</title>
         <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     
     <body>
-        <div class="grid">
-            <!-- HEADER STARTS HERE -->
-            <span class="align-logo" ><a href="index.html"><img class="header-logo" src="images/headerLogo.png" alt="Euroscoop logo"/></a></span>
-            <!-- NAVIGATION STARTS HERE -->
-            <div class="home"><a href="index.html">Home</a></div>
-            <div class="films"><a href="films.html">Films</a></div>
-            <div class="programma"><a href="programma.html">Programma</a></div>
-            <div class="verwacht"><a href="verwacht.html">Verwacht</a></div>
-
+        <nav class="nav-wrapper">
+            <div class="logo">
+                <img class="euroscoop-logo" src="images/headerLogo.png" alt="Euroscoop logo">
+            </div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#featured-film">Films</a></li>
+                <li><a href="#verwacht">Wordt verwacht</a></li>
+                <li><a href="#">Programma</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div id="featured-film">
+                <img class="aladdin" src="images/aladdin.jpg" alt="Aladdin">
+                <img class="avengers" src="images/avengers.jpg" alt="Avengers End Game">
+                <img class="phoenix" src="images/dark-phoenix.jpg" alt="X-men: Dark Phoenix">
+                <img class="dumbo" src="images/dumbo.jpeg" alt="Dumbo">
+                <img class="john-wick" src="images/john-wick.jpg" alt="John Wick 3">
+                <img class="pikachu" src="images/pikachu.jpg" alt="Detective Pikachu">
+                <img class="rocketman" src="images/rocketman.jpg" alt="Rocketsman">
+                <img class="wonder-park" src="images/wonder-park.jpeg" alt="Wonder Park">
+            </div>
+            <div id="verwacht">
+                <h3>Wordt verwacht</h3>
+                <div class="childs-play">
+                    <h4 id="cp-title">Child's Play</h4>
+                    <span id="cp-date">19 juni 2019</span>
+                </div>
+                <div class="santiago-italia">
+                    <h4 id="si-title">Santiago Italia</h4>
+                    <span id="si-date">19 juni 2019</span>
+                </div>
+                <div class="mib">
+                    <h4 id="mib-title">Men in Black International</h4>
+                    <span id="mib-date">19 juni 2019</span>
+                </div>
+                <div class="monky">
+                    <h4 id="monky-title">Monky</h4>
+                    <span id="monky-date">26 juni 2019</span>
+                </div>
+                <div class="ladies-night">
+                    <h4 id="ln-title">Ladies Night: Yesterday</h4>
+                    <span id="ln-date">26 juni 2019</span>
+                </div>
+            </div>
         </div>
     </body>
     
