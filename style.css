@@ -44,6 +44,9 @@ body {
 #featured-film {
     grid-area: mainContent;
     margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -167,35 +170,3 @@ li {
     }
     
 }
-
-/*.aladdin {
-    grid-area: aladdin;
-}
-
-.avengers {
-    grid-area: avengers;
-}
-
-.phoenix {
-    grid-area: dark-phoenix;
-}
-
-.dumbo {
-    grid-area: dumbo;
-}
-
-.john-wick {
-    grid-area: john-wick;
-}
-
-.pikachu {
-    grid-area: pikachu;
-}
-
-.rocketman {
-    grid-area: rocketman;
-}
-
-.wonder-park {
-    grid-area: wonder-park;
-}*/
