@@ -104,10 +104,7 @@ li {
 
 /* EXTRA SMALL SCREENS */
 @media screen and (max-width:576px){
-    body {
-        background-color: purple;
-    }
-    
+  
     .nav-wrapper {
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -130,9 +127,6 @@ li {
 
 /*SMALL SCREENS*/
 @media screen and (min-width: 577px) and (max-width:768px){
-    body {
-        background-color: red;
-    }
     
     .nav-wrapper {
         grid-template-columns: 100%;
